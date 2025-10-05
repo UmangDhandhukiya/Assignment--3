@@ -14,7 +14,7 @@ const Client = () => {
   ];
 
   return (
-    <div className="clients">
+    <div id="clients" className="clients">
       <div className="heading">
         <h1>OUR CLIENTS</h1>
         <div className="lines">
@@ -29,6 +29,7 @@ const Client = () => {
           );
         })}
       </div>
+      <img src="/decore9.svg" className="decore11" alt="" />
     </div>
   );
 };

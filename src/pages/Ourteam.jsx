@@ -2,7 +2,7 @@ import React from "react";
 
 const Ourteam = () => {
   return (
-    <div className="ourteam">
+    <div id="team" className="ourteam">
       <div className="heading">
         <h1>OUR TEAM</h1>
         <div className="lines">
@@ -24,6 +24,7 @@ const Ourteam = () => {
           <h5>Sanya R.</h5>
         </div>
       </div>
+       <img src="/decore5.svg" className="decore9" alt="" />  
     </div>
   );
 };

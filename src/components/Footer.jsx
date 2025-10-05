@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div id="contact" className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <h6>social</h6>
+          <h6>Social</h6>
           <div className="item">
             <img src="/_fb.svg" alt="" />
             <a href="">Facebook</a>

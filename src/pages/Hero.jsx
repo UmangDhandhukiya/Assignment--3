@@ -13,10 +13,8 @@ const Hero = () => {
           ipsum, ut quam volutpat, tortor.
         </p>
       </div>
-      <img className="decore1" src="/decore1.svg" alt="" srcset="" />
-      <img className="decore2" src="/decore2.svg" alt="" srcset="" />
-      <img className="decore3" src="/decore3.svg" alt="" srcset="" />
-      <img className="decore4" src="/vector.png" alt="" srcset="" />
+      <img className="decore3" src="/decore3.svg" alt=""/>
+      <img className="decore4" src="/vector.png" alt=""/>
     </div>
   );
 };

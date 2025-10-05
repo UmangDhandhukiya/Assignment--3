@@ -10,7 +10,7 @@ const Project = () => {
           <div className="line2"></div>
         </div>
       </div>
-      <div className="project-details"> 
+      <div className="project-details">   
         <div className="project-left-part">
           <div className="project-card">
             <img src="/project1.jpg" alt="" />
@@ -28,6 +28,7 @@ const Project = () => {
           </div>
         </div>
       </div>
+      <img src="/decore8.svg" className="decore10" alt="" />
     </div>
   );
 };

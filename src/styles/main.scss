@@ -5,10 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
 * {
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Rubik";
+    scroll-behavior: smooth;
 }
 
 p {
@@ -64,17 +65,43 @@ h3 {
 // header
 
 .header {
+    background-color: transparent;
     height: 95px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 18px;
-    position: absolute;
+    position: relative;
 }
 
 .nav-items {
     display: none;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.nav-items-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.nav-items-mobile a {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .logo {
@@ -86,7 +113,7 @@ h3 {
 .hero {
     @include flex-center;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 95px);
     max-height: 961px;
     position: relative;
     padding: 0px 18px;
@@ -134,9 +161,14 @@ h3 {
     padding: 10px;
 }
 
-.engage {
+.right-inner {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    padding-top: 12px;
+}
+
+.engage {
+    width: 50%;
     padding: 8px 0px;
     gap: 15px;
 }
@@ -184,6 +216,18 @@ h3 {
     display: none;
 }
 
+.decore9 {
+    display: none;
+}
+
+.decore10 {
+    display: none;
+}
+
+.decore11 {
+    display: none;
+}
+
 //our Team
 
 .ourteam {
@@ -201,13 +245,19 @@ h3 {
     @include flex-center;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 40px;
 }
 
 .person {
     @include flex-center;
     flex-direction: column;
-    gap: 12px;
+    gap: 46px;
     padding: 6px 0px;
+}
+
+.person > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .person>h5 {
@@ -231,7 +281,6 @@ h3 {
 .project-card {
     margin: 12px 0px;
     position: relative;
-    overflow: hidden;
 }
 
 .project-card::after {
@@ -275,7 +324,7 @@ h3 {
 .clients {
     height: auto;
     position: relative;
-    padding: 0px 18px;
+    padding: 24px 18px;
     @include flex-center;
     flex-direction: column;
     gap: 18px;
@@ -380,8 +429,11 @@ p {
         font-weight: 400;
         font-size: 18px;
         line-height: 100%;
-        letter-spacing: 0%;
         color: black;
+    }
+
+    .nav-items > a:hover{
+        text-decoration: underline;
     }
 
     .decore1 {
@@ -409,6 +461,7 @@ p {
         width: 100%;
         display: flex;
         padding: 12px;
+        max-width: 1100px;
     }
 
     .left-part,
@@ -448,14 +501,92 @@ p {
         text-align: left;
     }
 
-    .service-left>img {     
-        height: 300px; 
-        object-fit: cover; 
+    .service-left>img {
+        height: 300px;
+        object-fit: cover;
     }
 
     .service-right>img {
-        height: 300px; 
-        object-fit: cover; 
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .decore5 {
+        display: block;
+        @include place-absolute(0, null, null, 0)
+    }
+
+    .decore6 {
+        display: block;
+        @include place-absolute(25%, 0, null, null)
+    }
+
+    .decore7 {
+        display: block;
+        @include place-absolute(50%, null, null, 0)
+    }
+
+    .decore8 {
+        display: block;
+        @include place-absolute(null, 0, 0, null)
+    }
+
+    .decore9 {
+        display: block;
+        @include place-absolute(-10%, null, null, 0)
+    }
+
+    .decore10 {
+        display: block;
+        @include place-absolute(-30%, 0, null, null)
+    }
+
+    .decore11 {
+        display: block;
+        @include place-absolute(0, null, null, 0)
+    }
+
+    .project {
+        height: 100vh;
+    }
+
+    .project-details {
+        display: flex;
+        gap: 12px;
+        width: 100%;
+        height: 100%;
+        max-width: 1100px;
+    }
+
+    .project-left-part {
+        width: 50%;
+        display: flex;
+    }
+
+    .project-right-part {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-card {
+        flex-grow: 1;
+        min-height: 0;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0px 0px;
+    }
+
+    .Team-details,
+    .clients-container,
+    .footer-container {
+        width: 100%;
+        max-width: 1100px;
     }
 
 }
