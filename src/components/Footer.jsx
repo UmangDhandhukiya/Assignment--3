@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the Footer component for the application.
+ * Parameters: None.
+ * This component displays the site footer, which is divided into sections for social media links, navigation (Explore), contact information, and copyright details.
+ */
 const Footer = () => {
   return (
     <div id="contact" className="footer">

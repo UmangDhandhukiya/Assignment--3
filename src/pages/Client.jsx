@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the 'Our Clients' section of the landing page, displaying a gallery of brand logos.
+ * Parameters: None.
+ * The component defines an array of image paths and maps over it to render each client logo dynamically.
+ */
 const Client = () => {
   const brand = [
     "/1brand.png",

@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { Menu } from 'lucide-react';
 
+/**
+ * Renders the Header component, including the logo, desktop navigation, and a mobile navigation menu controlled by a hamburger button.
+ * Parameters: None.
+ * The component uses local state to toggle the visibility of the mobile navigation links.
+ */
 const Header = () => {
 
 const [navlink,setNavlink] = useState(false)

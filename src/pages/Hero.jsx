@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the main Hero section (first visible area) of the landing page.
+ * Parameters: None.
+ * This component features a two-part layout with a main heading, introductory text, and decorative background images.
+ */
 const Hero = () => {
   return (
     <div className="hero">
