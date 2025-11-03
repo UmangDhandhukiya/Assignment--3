@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the 'About Us' section of the landing page.
+ * Parameters: None.
+ * This component displays an introductory section including a main heading, descriptive text about the company's mission and specializations, and two inner sections detailing core values (Engagement and Communication).
+ */
 const About = () => {
   return (
     <div id="about" className="about">

@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the 'Our Projects' section of the landing page.
+ * Parameters: None.
+ * This component displays the main heading and showcases multiple projects in a two-column layout using individual project cards.
+ */
 const Project = () => {
   return (
     <div className="project">

@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the 'Our Team' section of the landing page.
+ * Parameters: None.
+ * This component displays the main heading and features details about key team members, including their images and names.
+ */
 const Ourteam = () => {
   return (
     <div id="team" className="ourteam">

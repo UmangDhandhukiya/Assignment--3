@@ -62,7 +62,7 @@ h3 {
     height: 1px;
 }
 
-// header
+// ----header
 
 .header {
     background-color: transparent;
@@ -110,7 +110,7 @@ h3 {
     width: 210px;
 }
 
-// Hero
+// ----Hero
 
 .hero {
     @include flex-center;
@@ -148,7 +148,7 @@ h3 {
     @include place-absolute(null, null, 0, 0);
 }
 
-//about
+// ----about
 
 .about {
     height: auto;
@@ -180,7 +180,7 @@ h3 {
     width: 30px;
 }
 
-//services
+// ----services
 
 .services {
     height: auto;
@@ -230,7 +230,7 @@ h3 {
     display: none;
 }
 
-//our Team
+// ----our Team
 
 .ourteam {
     width: 100%;
@@ -270,7 +270,7 @@ h3 {
 
 }
 
-//Project
+// ----Project
 .project {
     height: auto;
     position: relative;
@@ -321,7 +321,7 @@ h3 {
     display: none;
 }
 
-//clients
+// ----clients
 
 .clients {
     height: auto;
@@ -353,7 +353,7 @@ h3 {
     filter: grayscale(0%);
 }
 
-//footer
+// ----footer
 .footer {
     height: auto;
     padding: 0px 18px;
@@ -406,7 +406,7 @@ p {
     @include flex-center
 }
 
-//responsive
+// ----responsive
 
 @media (min-width: 769px) {
 

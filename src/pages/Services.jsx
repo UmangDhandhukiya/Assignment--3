@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders the 'Services' section of the landing page.
+ * Parameters: None.
+ * This component displays the main heading and details multiple service offerings, each presented with an image, title, and description, arranged in alternating left/right layout.
+ */
 const Services = () => {
   return (
     <div id="service" className="services">
