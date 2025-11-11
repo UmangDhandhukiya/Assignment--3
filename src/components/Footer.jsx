@@ -7,7 +7,7 @@ import React from "react";
  */
 const Footer = () => {
   return (
-    <div id="contact" className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-container">
         <div className="footer-content">
           <h6>Social</h6>
@@ -58,8 +58,9 @@ const Footer = () => {
       <div className="item">
         <p>© Copyright 2018 Mendleson Communication</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
 export default Footer;
+  
