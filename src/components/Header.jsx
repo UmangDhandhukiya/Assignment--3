@@ -11,7 +11,7 @@ const Header = () => {
 const [navlink,setNavlink] = useState(false)
 
   return (
-    <div className='header'>
+    <header className='header'>
       <img src="/logo.png" alt="logo" className='logo'/>
       <button className='hamburger' onClick={() => {setNavlink(!navlink)}}><Menu size={30} /></button>
       <div className='nav-items'>
@@ -32,7 +32,7 @@ const [navlink,setNavlink] = useState(false)
 
       <img className="decore1" src="/decore1.svg" alt=""/>
       <img className="decore2" src="/decore2.svg" alt=""/>
-    </div>
+    </header>
   )
 }
 
